@@ -8,3 +8,7 @@ setInterval(() => {
     first.style.display = 'inline'
     document.getElementById("carouselList").appendChild(first)        
 }, 3000);
+
+document.getElementById('scrollContainer').onscroll = ()=>{
+    document.getElementById('navbarNav').classList.remove("show")
+}

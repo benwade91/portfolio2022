@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,12 +36,12 @@
             </div>
         </div>
     </nav>
-    <div class="scrollContainer">
+    <div id="scrollContainer" class="scrollContainer">
         <section id="about">
             <div id="aboutLeft">
                 <div class="introduction">
                     <h2>I'm Ben</h2>
-                <h2>a web developer</h2>
+                    <h2>a web developer</h2>
                 </div>
                 <div class="skillsCarousel">
                     <ul id='carouselList' class="carouselList">
@@ -67,27 +67,63 @@
                 <img src="./BenBitmoji.png" alt="">
             </div>
         </section>
-        
 
-        <section id="projects">
-            <div id="sabreChatImgContainer">
+
+        <section id="projects" class="projects">
+            <div id="sabreChatImgContainer" class="projectImg">
                 <img id="sabreChat" src="./images/sabrechat.png" alt="">
             </div>
-            <div id="sabreInfo">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis incidunt atque explicabo sapiente perferendis deserunt velit. Itaque dolor, distinctio porro commodi magni deserunt. Unde magnam nisi quibusdam nulla doloribus sequi.</p>
-                <a class="btn btn-secondary" href="#" role="button">Check it out</a>
-                <a class="btn btn-outline-dark" href="#" role="button">Github Repo</a>
+            <div class="projectInfo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis incidunt atque explicabo sapiente
+                    perferendis deserunt velit. Itaque dolor, distinctio porro commodi magni deserunt. Unde magnam nisi
+                    quibusdam nulla doloribus sequi.</p>
+                <a class="btn btn-secondary" href="https://sabre-chat.herokuapp.com/" role="button">Check it out</a>
+                <a class="btn btn-outline-dark" href="https://github.com/benwade91/Sabre-App" role="button">Github
+                    Repo</a>
             </div>
         </section>
-        
+
+        <section id="parkingPal" class="projects">
+            <div class="projectInfo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis incidunt atque explicabo sapiente
+                    perferendis deserunt velit. Itaque dolor, distinctio porro commodi magni deserunt. Unde magnam nisi
+                    quibusdam nulla doloribus sequi.</p>
+                <a class="btn btn-secondary" href="https://sabre-chat.herokuapp.com/" role="button">Check it out</a>
+                <a class="btn btn-outline-dark" href="https://github.com/benwade91/Sabre-App" role="button">Github
+                    Repo</a>
+            </div>
+            <div id="parkingPalImgContainer" class="projectImg">
+                <img id="parkingPalsImg" src="./images/parkingpals.png" alt="parking pals">
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="projectImg">
+                <img id="simpleSudsImg" src="./images/simpleSudsCombo.png" alt="simple suds">
+            </div>
+            <div class="projectInfo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis incidunt atque explicabo sapiente
+                    perferendis deserunt velit. Itaque dolor, distinctio porro commodi magni deserunt. Unde magnam nisi
+                    quibusdam nulla doloribus sequi.</p>
+                <a class="btn btn-secondary" href="https://sabre-chat.herokuapp.com/" role="button">Check it out</a>
+                <a class="btn btn-outline-dark" href="https://github.com/benwade91/Sabre-App" role="button">Github
+                    Repo</a>
+            </div>
+        </section>
 
         <section id="contact">
-
+            <h1>Get in touch:</h1>
+            <div>
+                <a href="https://www.linkedin.com/in/ben-wade-6abb621b7/"><img src="./images/linkedIn.png" alt=""></a>
+                <a href="https://github.com/benwade91"><img src="./images/github-logo.png" alt="github link"></a>
+                <a href="mailto:benwade91@gmail.com"><img src="./images/email.png" alt="email link"></a>
+                <a href="https://www.instagram.com/_benwade_/"><img src="./images/instagram.png" alt="instagram link"></a>
+            </div>
         </section>
-        
+
 
         <section id="resume">
-
+            <iframe id="resumeDoc" title='bensResume' src="https://docs.google.com/document/d/e/2PACX-1vQMHWoihZr17j_d3gEu71AQsX60pD3xQxqW4KYh_5L1ytoUYZl5_v3C9TK2ti9iOE2P_cWXVePaSiFK/pub?embedded=true"></iframe>
         </section>
     </div>
 

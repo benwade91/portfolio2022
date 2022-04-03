@@ -1,3 +1,9 @@
+:root {
+    --black: #1B262C;
+    --blue: #0F4C75;
+    --turquoise: #00B7C2;
+    --tan: #FDCB9E
+}
 .navbar {
     height: 10vh;
 }
@@ -22,6 +28,7 @@ a.nav-link {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     max-height: 90vh;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -52,7 +59,6 @@ section {
 .skillsCarousel {
     /* overflow: hidden; */
     width: 100vw;
-    z-index: -1;
 }
 .carouselList {
     /* overflow: hidden; */
@@ -92,42 +98,106 @@ section {
 #aboutRight img {
     max-height: 80vh;
     max-width: 50vw;
+    z-index: 2;
 }
 
 
-
-#projects {
+.projects {
     display: flex;
 }
-#projects>div{
-    /* width: 50vw; */
+.projects>div{
+    width: 50vw;
     display: flex;
     justify-content: center;
 }
 #sabreChat{
     height: 90vh;
 }
-#sabreInfo {
+.projectInfo {
     flex-direction: column;
     align-items: center;
 }
-#sabreInfo a{
+.projectInfo a{
     width: 200px;
     margin-top: 10px;
 }
-
+.projectInfo p{
+    width: 80%;
+}
+.projectImg {
+    display: flex;
+    align-items: center;
+}
+#parkingPalsImg{
+    max-width: 50vw;
+    max-height: 50vh;
+}
+#simpleSudsImg{
+    max-width: 50vw;
+    max-height: 50vh;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact a{
+    margin: 30px;
+}
+#contact img{
+    height: 20vh;
+}
+#resume {
+    overflow: hidden;
+}
+#resumeDoc {
+    width: 100%;
+    height: 100%;
+    padding-left: 15vw;
+}
 @media screen and (max-width: 630px) {
+    .introduction h2{
+        text-align: center;
+    }
     .skillsCarousel {
         display: none;
     }
-    #sabreChatImgContainer{
+    #sabreChat{
+        height: 50vh;
+    }
+    .projectImg{
         width: 50vw;
         position: relative;
-        left: 35vw;
+        left: 25vw;
         opacity: .2;
+    }
+    .projectInfo {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        right: 25vw;
+        position: relative;
+    }
+    #parkingPalImgContainer{
+        left: -25vw;
+    }
+    #parkingPal>.projectInfo{
+        left: 25vw;
     }
     #sabreInfo{
         position: relative;
         right: 25vw;
+    }
+    #contact img{
+        height: 10vh;
+    }
+    #resumeDoc {
+    padding: 0;
     }
   }
